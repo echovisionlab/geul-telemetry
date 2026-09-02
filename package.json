@@ -2,6 +2,8 @@
   "name": "@echovisionlab/geul-telemetry",
   "version": "0.1.1",
   "private": false,
+  "description": "Shared logging, tracing, audit, security, request-correlation, and redaction contracts for Geul services.",
+  "author": "state303 <state303@dsub.io>",
   "type": "module",
   "repository": {
     "type": "git",
