@@ -1,0 +1,61 @@
+{
+  "name": "@echovisionlab/geul-telemetry",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/echovisionlab/geul-telemetry.git"
+  },
+  "engines": {
+    "node": "24.19.0"
+  },
+  "packageManager": "pnpm@11.22.0+sha512.1ff870c4c6133dfd88fb2afc46dd13d47f09c9794b438c6fdb47ca98caf3bc16381ee0be93a091b8e3824cf01f889f46d7d9e20910fb0be1ab0fb5baa80dd621",
+  "files": [
+    "README.md",
+    "src",
+    "!src/**/*.test.ts",
+    "fixtures",
+    "policy"
+  ],
+  "scripts": {
+    "format:check": "prettier --check .",
+    "format": "prettier --write .",
+    "lint": "eslint --cache .",
+    "lint:fix": "eslint --cache . --fix",
+    "deadcode": "knip --include files,dependencies,unlisted,exports,types",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "package:smoke": "npm pack --dry-run"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./actor": "./src/actor.ts",
+    "./redaction": "./src/redaction.ts",
+    "./request-id": "./src/request-id.ts",
+    "./trace": "./src/trace.ts"
+  },
+  "dependencies": {
+    "@opentelemetry/api": "^1.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@typescript/native": "npm:typescript@7.0.2",
+    "@vitest/coverage-v8": "^4.1.10",
+    "eslint": "^10.8.1",
+    "knip": "^6.32.2",
+    "prettier": "^3.9.6",
+    "typescript": "npm:@typescript/typescript6@6.0.2",
+    "typescript-eslint": "^8.67.0",
+    "vitest": "^4.1.10"
+  },
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "homepage": "https://github.com/echovisionlab/geul-telemetry#readme",
+  "bugs": {
+    "url": "https://github.com/echovisionlab/geul-telemetry/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

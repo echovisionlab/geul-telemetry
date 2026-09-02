@@ -1,0 +1,11 @@
+[
+  "geul-backend",
+  "geul-web",
+  "geul-identity",
+  "geul-collab",
+  "geul-cdn",
+  "geul-og",
+  "geul-asset-optimizer",
+  "geul-transcoder",
+  "geul-waveform-processor"
+]

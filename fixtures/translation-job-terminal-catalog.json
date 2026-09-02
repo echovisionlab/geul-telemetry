@@ -1,0 +1,45 @@
+{
+  "event": "translation.job.terminal",
+  "outcomes": ["applied", "failed", "cancelled"],
+  "entity_types": [
+    "post",
+    "page",
+    "work",
+    "program_event",
+    "release",
+    "artist",
+    "label",
+    "menu",
+    "email_template",
+    "email_layout",
+    "campaign",
+    "form",
+    "privacy",
+    "terms",
+    "series"
+  ],
+  "failure_reasons": [
+    "provider_configuration",
+    "provider_authentication",
+    "provider_rate_limited",
+    "provider_unavailable",
+    "provider_rejected",
+    "provider_response_invalid",
+    "target_apply_failed",
+    "og_handoff_failed",
+    "internal"
+  ],
+  "valid_job_ids": [
+    "018f47a2-8a3d-1e17-9d42-6f12c89b1234",
+    "018f47a2-8a3d-4e17-9d42-6f12c89b1234",
+    "018f47a2-8a3d-7e17-9d42-6f12c89b1234",
+    "018f47a2-8a3d-8e17-9d42-6f12c89b1234"
+  ],
+  "invalid_job_ids": [
+    "018F47A2-8A3D-4E17-9D42-6F12C89B1234",
+    "018f47a2-8a3d-0e17-9d42-6f12c89b1234",
+    "018f47a2-8a3d-9e17-9d42-6f12c89b1234",
+    "018f47a2-8a3d-4e17-7d42-6f12c89b1234",
+    "018f47a28a3d-4e17-9d42-6f12c89b1234"
+  ]
+}

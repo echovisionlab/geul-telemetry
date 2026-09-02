@@ -1,0 +1,61 @@
+[
+  {
+    "access_id": "7a7a8fd4-1f69-4e9a-9dc2-2378926ff351",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "authentication.succeeded",
+    "request_id": "018f47a2-8a3d-4e17-9d42-6f12c89b1234",
+    "trace_id": "4bf92f3577b34da6a3ce929d0e0e4736",
+    "span_id": "00f067aa0ba902b7",
+    "actor_kind": "member",
+    "actor_member_id": "member-1",
+    "source_ip": "192.0.2.4",
+    "flow_kind": "login",
+    "authentication_method": "passkey",
+    "principal_state": "active"
+  },
+  {
+    "access_id": "0b6bcad2-c90d-49e9-bec7-f9a4ba6b2894",
+    "occurred_at": "2026-08-09T03:04:06Z",
+    "action": "authentication.failed",
+    "request_id": "018f47a2-8a3d-4e17-9d42-6f12c89b1234",
+    "actor_kind": "anonymous",
+    "source_ip": "2001:db8::4",
+    "flow_kind": "login",
+    "authentication_method": "oidc",
+    "provider": "google",
+    "reason": "provider_denied"
+  },
+  {
+    "access_id": "ade2d4c8-ca22-4c73-838e-104106ae20bb",
+    "occurred_at": "2026-08-09T03:04:07Z",
+    "action": "authentication.blocked",
+    "request_id": "018f47a2-8a3d-4e17-9d42-6f12c89b1234",
+    "actor_kind": "anonymous",
+    "source_ip": "192.0.2.5",
+    "reason": "rate_limited"
+  },
+  {
+    "access_id": "c64e7917-d837-4d2f-a043-d12d99b07494",
+    "occurred_at": "2026-08-09T03:04:08Z",
+    "action": "authorization.denied",
+    "request_id": "018f47a2-8a3d-4e17-9d42-6f12c89b1234",
+    "actor_kind": "anonymous",
+    "source_ip": "192.0.2.6",
+    "reason": "authentication_required",
+    "attempted_action": "/geul.api.v1.MemberService/ListMembersAdmin",
+    "permission": "procedure:invoke"
+  },
+  {
+    "access_id": "7ef4d464-532a-4921-91e7-d63e06c31842",
+    "occurred_at": "2026-08-09T03:04:09Z",
+    "action": "personal_data.accessed",
+    "request_id": "018f47a2-8a3d-4e17-9d42-6f12c89b1234",
+    "actor_kind": "member",
+    "actor_member_id": "7a7a8fd4-1f69-4e9a-9dc2-2378926ff351",
+    "source_ip": "192.0.2.7",
+    "subject_type": "member_collection",
+    "subject_id": "1",
+    "access_kind": "read",
+    "data_category": "member_administration"
+  }
+]

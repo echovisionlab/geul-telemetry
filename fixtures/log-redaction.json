@@ -1,0 +1,72 @@
+{
+  "forbidden": [
+    { "key": "api_key", "normalized": "api_key" },
+    { "key": "APIKey", "normalized": "apikey" },
+    { "key": "translation.api-key", "normalized": "translation_api_key" },
+    {
+      "key": "provider.document.id",
+      "normalized": "provider_document_id"
+    },
+    {
+      "key": "translationProviderDocumentKey",
+      "normalized": "translation_provider_document_key"
+    },
+    { "key": "XLIFF", "normalized": "xliff" },
+    { "key": "translation-xliff", "normalized": "translation_xliff" },
+    { "key": "sourceText", "normalized": "source_text" },
+    { "key": "target.text", "normalized": "target_text" },
+    {
+      "key": "translationTranslatedText",
+      "normalized": "translation_translated_text"
+    },
+    { "key": "systemPrompt", "normalized": "system_prompt" },
+    { "key": "glossary", "normalized": "glossary" },
+    {
+      "key": "translationGlossary",
+      "normalized": "translation_glossary"
+    },
+    {
+      "key": "translationGlossaryPayload",
+      "normalized": "translation_glossary_payload"
+    },
+    {
+      "key": "translationContextPayload",
+      "normalized": "translation_context_payload"
+    },
+    {
+      "key": "providerRequestBody",
+      "normalized": "provider_request_body"
+    },
+    {
+      "key": "provider.response.body",
+      "normalized": "provider_response_body"
+    },
+    {
+      "key": "providerResponseMessage",
+      "normalized": "provider_response_message"
+    },
+    { "key": "providerError", "normalized": "provider_error" },
+    {
+      "key": "translationProviderRawError",
+      "normalized": "translation_provider_raw_error"
+    },
+    { "key": "raw-error", "normalized": "raw_error" },
+    { "key": "error.message", "normalized": "error_message" }
+  ],
+  "allowed": [
+    { "key": "provider", "normalized": "provider" },
+    { "key": "providerType", "normalized": "provider_type" },
+    { "key": "model", "normalized": "model" },
+    { "key": "modelCatalogValue", "normalized": "model_catalog_value" },
+    { "key": "operation", "normalized": "operation" },
+    { "key": "HTTP status class", "normalized": "http_status_class" },
+    { "key": "exceptionType", "normalized": "exception_type" },
+    { "key": "reason", "normalized": "reason" },
+    { "key": "failureReason", "normalized": "failure_reason" },
+    {
+      "key": "providerDocumentSubmittedAt",
+      "normalized": "provider_document_submitted_at"
+    },
+    { "key": "promptLength", "normalized": "prompt_length" }
+  ]
+}

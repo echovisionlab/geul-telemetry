@@ -1,0 +1,23 @@
+[
+  {
+    "job_kind": "mesh_optimization",
+    "failure_reasons": [
+      "rejected",
+      "source_not_found",
+      "download_failed",
+      "optimization_failed",
+      "upload_failed",
+      "internal"
+    ]
+  },
+  {
+    "job_kind": "og_generation",
+    "failure_reasons": [
+      "invalid_claim",
+      "source_rejected",
+      "processing_failed",
+      "integrity_failed",
+      "completion_rejected"
+    ]
+  }
+]

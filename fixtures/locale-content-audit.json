@@ -1,0 +1,126 @@
+[
+  {
+    "case": "post locale created",
+    "action": "post.updated",
+    "target_type": "post",
+    "target_id": "post-1",
+    "locale": "ko",
+    "item_operation": "created"
+  },
+  {
+    "case": "page locale updated",
+    "action": "page.updated",
+    "target_type": "page",
+    "target_id": "page-1",
+    "locale": "en-US",
+    "item_operation": "updated"
+  },
+  {
+    "case": "work locale deleted",
+    "action": "work.updated",
+    "target_type": "work",
+    "target_id": "work-1",
+    "locale": "ja",
+    "item_operation": "deleted"
+  },
+  {
+    "case": "post series locale updated",
+    "action": "post_series.updated",
+    "target_type": "post_series",
+    "target_id": "series-1",
+    "locale": "fr",
+    "item_operation": "updated"
+  },
+  {
+    "case": "program event locale updated",
+    "action": "program_event.updated",
+    "target_type": "program_event",
+    "target_id": "event-1",
+    "locale": "de",
+    "item_operation": "updated"
+  },
+  {
+    "case": "release locale updated",
+    "action": "release.updated",
+    "target_type": "release",
+    "target_id": "release-1",
+    "locale": "es-419",
+    "item_operation": "updated"
+  },
+  {
+    "case": "artist locale updated",
+    "action": "artist.updated",
+    "target_type": "artist",
+    "target_id": "artist-1",
+    "locale": "pt-PT",
+    "item_operation": "updated"
+  },
+  {
+    "case": "label locale updated",
+    "action": "label.updated",
+    "target_type": "label",
+    "target_id": "label-1",
+    "locale": "it",
+    "item_operation": "updated"
+  },
+  {
+    "case": "menu locale updated",
+    "action": "menu.updated",
+    "target_type": "menu",
+    "target_id": "menu-1",
+    "locale": "zh-CN",
+    "item_operation": "updated"
+  },
+  {
+    "case": "campaign locale updated",
+    "action": "campaign.updated",
+    "target_type": "campaign",
+    "target_id": "campaign-1",
+    "locale": "nl",
+    "item_operation": "updated"
+  },
+  {
+    "case": "form locale updated",
+    "action": "form.updated",
+    "target_type": "form",
+    "target_id": "form-1",
+    "locale": "pl",
+    "item_operation": "updated"
+  },
+  {
+    "case": "email template locale updated",
+    "action": "email_template.updated",
+    "target_type": "email_template",
+    "target_id": "template-1",
+    "locale": "ru",
+    "item_operation": "updated"
+  },
+  {
+    "case": "email layout locale updated",
+    "action": "email_layout.updated",
+    "target_type": "email_layout",
+    "target_id": "layout-1",
+    "locale": "tr",
+    "item_operation": "updated"
+  },
+  {
+    "case": "privacy locale updated",
+    "action": "legal_policy.updated",
+    "target_type": "legal_policy",
+    "target_id": "privacy-1",
+    "locale": "vi",
+    "item_operation": "updated",
+    "policy_type": "privacy",
+    "version_number": 2
+  },
+  {
+    "case": "terms locale updated",
+    "action": "legal_policy.updated",
+    "target_type": "legal_policy",
+    "target_id": "terms-1",
+    "locale": "th",
+    "item_operation": "updated",
+    "policy_type": "terms",
+    "version_number": 1
+  }
+]

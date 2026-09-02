@@ -1,0 +1,316 @@
+[
+  {
+    "audit_id": "00000000-0000-4000-8000-000000000001",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "site_settings.updated",
+    "request_id": "018f47a2-8a3d-4e17-9d42-6f12c89b1234",
+    "actor_kind": "member",
+    "actor_member_id": "member-1",
+    "target_type": "site_settings",
+    "target_id": "1",
+    "changed_fields": ["primary_color", "site_title"]
+  },
+  {
+    "audit_id": "00000000-0000-4000-8000-000000000002",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "member.updated",
+    "actor_kind": "member",
+    "actor_member_id": "member-1",
+    "target_type": "member",
+    "target_id": "member-2",
+    "changed_fields": ["role"],
+    "previous_role": "user",
+    "new_role": "author"
+  },
+  {
+    "audit_id": "00000000-0000-4000-8000-000000000003",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "member.updated",
+    "actor_kind": "member",
+    "actor_member_id": "member-1",
+    "target_type": "member",
+    "target_id": "member-2",
+    "changed_fields": ["status"],
+    "previous_state": "active",
+    "new_state": "banned"
+  },
+  {
+    "audit_id": "00000000-0000-4000-8000-000000000004",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "member.updated",
+    "actor_kind": "system",
+    "actor_service": "geul-backend",
+    "target_type": "member",
+    "target_id": "member-2",
+    "changed_fields": ["status"],
+    "previous_state": "banned",
+    "new_state": "active"
+  },
+  {
+    "audit_id": "00000000-0000-4000-8000-000000000005",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "post.updated",
+    "actor_kind": "system",
+    "actor_service": "geul-collab",
+    "target_type": "post",
+    "target_id": "post-1",
+    "changed_fields": ["version"],
+    "version_id": "version-1",
+    "contributor_member_ids": [
+      "1b6bcad2-c90d-49e9-bec7-f9a4ba6b2894",
+      "7a7a8fd4-1f69-4e9a-9dc2-2378926ff351"
+    ]
+  },
+  {
+    "audit_id": "00000000-0000-4000-8000-000000000006",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "page.updated",
+    "actor_kind": "system",
+    "actor_service": "geul-collab",
+    "target_type": "page",
+    "target_id": "page-1",
+    "changed_fields": ["version"],
+    "version_id": "version-1",
+    "contributor_member_ids": [
+      "1b6bcad2-c90d-49e9-bec7-f9a4ba6b2894",
+      "7a7a8fd4-1f69-4e9a-9dc2-2378926ff351"
+    ]
+  },
+  {
+    "audit_id": "00000000-0000-4000-8000-000000000007",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "work.updated",
+    "actor_kind": "system",
+    "actor_service": "geul-collab",
+    "target_type": "work",
+    "target_id": "work-1",
+    "changed_fields": ["version"],
+    "version_id": "version-1",
+    "contributor_member_ids": [
+      "1b6bcad2-c90d-49e9-bec7-f9a4ba6b2894",
+      "7a7a8fd4-1f69-4e9a-9dc2-2378926ff351"
+    ]
+  },
+  {
+    "audit_id": "00000000-0000-4000-8000-000000000008",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "post.created",
+    "actor_kind": "member",
+    "actor_member_id": "member-1",
+    "target_type": "post",
+    "target_id": "post-1"
+  },
+  {
+    "audit_id": "00000000-0000-4000-8000-000000000009",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "page.created",
+    "actor_kind": "member",
+    "actor_member_id": "member-1",
+    "target_type": "page",
+    "target_id": "page-1"
+  },
+  {
+    "audit_id": "00000000-0000-4000-8000-00000000000a",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "work.created",
+    "actor_kind": "member",
+    "actor_member_id": "member-1",
+    "target_type": "work",
+    "target_id": "work-1"
+  },
+  {
+    "audit_id": "00000000-0000-4000-8000-00000000000b",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "post.deleted",
+    "actor_kind": "member",
+    "actor_member_id": "member-1",
+    "target_type": "post",
+    "target_id": "post-1"
+  },
+  {
+    "audit_id": "00000000-0000-4000-8000-00000000000c",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "page.deleted",
+    "actor_kind": "member",
+    "actor_member_id": "member-1",
+    "target_type": "page",
+    "target_id": "page-1"
+  },
+  {
+    "audit_id": "00000000-0000-4000-8000-00000000000d",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "work.deleted",
+    "actor_kind": "member",
+    "actor_member_id": "member-1",
+    "target_type": "work",
+    "target_id": "work-1"
+  },
+  {
+    "audit_id": "00000000-0000-4000-8000-00000000000e",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "account.updated",
+    "actor_kind": "member",
+    "actor_member_id": "member-1",
+    "target_type": "account",
+    "target_id": "member-1",
+    "changed_fields": ["canonical_email"],
+    "previous_email": "old@example.test",
+    "new_email": "new@example.test"
+  },
+  {
+    "audit_id": "00000000-0000-4000-8000-00000000000f",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "account.updated",
+    "actor_kind": "member",
+    "actor_member_id": "member-1",
+    "target_type": "account",
+    "target_id": "member-1",
+    "changed_fields": ["login_emails"],
+    "collection_operation": "added",
+    "email": "added@example.test"
+  },
+  {
+    "audit_id": "00000000-0000-4000-8000-000000000010",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "account.updated",
+    "actor_kind": "member",
+    "actor_member_id": "member-1",
+    "target_type": "account",
+    "target_id": "member-1",
+    "changed_fields": ["login_emails"],
+    "collection_operation": "removed",
+    "email": "removed@example.test"
+  },
+  {
+    "audit_id": "00000000-0000-4000-8000-000000000011",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "account.updated",
+    "actor_kind": "member",
+    "actor_member_id": "member-1",
+    "target_type": "account",
+    "target_id": "member-1",
+    "changed_fields": ["social_logins"],
+    "collection_operation": "added",
+    "provider": "google",
+    "provider_subject": "google-subject"
+  },
+  {
+    "audit_id": "00000000-0000-4000-8000-000000000012",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "account.updated",
+    "actor_kind": "member",
+    "actor_member_id": "member-1",
+    "target_type": "account",
+    "target_id": "member-1",
+    "changed_fields": ["social_logins"],
+    "collection_operation": "removed",
+    "provider": "github",
+    "provider_subject": "github-subject"
+  },
+  {
+    "audit_id": "00000000-0000-4000-8000-000000000013",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "account.updated",
+    "actor_kind": "member",
+    "actor_member_id": "member-1",
+    "target_type": "account",
+    "target_id": "member-1",
+    "changed_fields": ["passkeys"],
+    "collection_operation": "added",
+    "passkey_ids": ["passkey-1"]
+  },
+  {
+    "audit_id": "00000000-0000-4000-8000-000000000014",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "account.updated",
+    "actor_kind": "member",
+    "actor_member_id": "member-1",
+    "target_type": "account",
+    "target_id": "member-1",
+    "changed_fields": ["passkeys"],
+    "collection_operation": "removed",
+    "passkey_ids": ["passkey-2"]
+  },
+  {
+    "audit_id": "00000000-0000-4000-8000-000000000015",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "account.updated",
+    "actor_kind": "member",
+    "actor_member_id": "member-1",
+    "target_type": "account",
+    "target_id": "member-1",
+    "changed_fields": ["sessions"],
+    "collection_operation": "removed",
+    "session_scope": "one",
+    "session_ids": ["018f47a2-8a3d-4e17-9d42-6f12c89b1234"]
+  },
+  {
+    "audit_id": "00000000-0000-4000-8000-000000000016",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "account.updated",
+    "actor_kind": "member",
+    "actor_member_id": "member-1",
+    "target_type": "account",
+    "target_id": "member-1",
+    "changed_fields": ["deletion_state"],
+    "previous_state": "none",
+    "new_state": "confirmation_pending"
+  },
+  {
+    "audit_id": "00000000-0000-4000-8000-000000000017",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "account.updated",
+    "actor_kind": "member",
+    "actor_member_id": "member-1",
+    "target_type": "account",
+    "target_id": "member-1",
+    "changed_fields": ["deletion_state"],
+    "previous_state": "confirmation_pending",
+    "new_state": "scheduled"
+  },
+  {
+    "audit_id": "00000000-0000-4000-8000-000000000018",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "account.updated",
+    "actor_kind": "member",
+    "actor_member_id": "member-1",
+    "target_type": "account",
+    "target_id": "member-1",
+    "changed_fields": ["deletion_state"],
+    "previous_state": "scheduled",
+    "new_state": "cancelled"
+  },
+  {
+    "audit_id": "00000000-0000-4000-8000-000000000019",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "account.updated",
+    "actor_kind": "member",
+    "actor_member_id": "member-1",
+    "target_type": "account",
+    "target_id": "member-1",
+    "changed_fields": ["deletion_state"],
+    "previous_state": "recovery_confirmation_pending",
+    "new_state": "recovered"
+  },
+  {
+    "audit_id": "00000000-0000-4000-8000-00000000001a",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "account.deleted",
+    "actor_kind": "system",
+    "actor_service": "geul-backend",
+    "target_type": "account",
+    "target_id": "member-1"
+  },
+  {
+    "audit_id": "00000000-0000-4000-8000-00000000001b",
+    "occurred_at": "2026-08-09T03:04:05Z",
+    "action": "member.updated",
+    "request_id": "018f47a2-8a3d-4e17-9d42-6f12c89b1234",
+    "actor_kind": "member",
+    "actor_member_id": "member-1",
+    "target_type": "member",
+    "target_id": "member-1",
+    "changed_fields": ["nickname", "onboarded"],
+    "nickname": "Onboarded Member"
+  }
+]

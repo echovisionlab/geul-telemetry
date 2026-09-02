@@ -1,0 +1,132 @@
+[
+  { "action": "site_settings.updated", "target_type": "site_settings" },
+  { "action": "map_theme.created", "target_type": "map_theme" },
+  { "action": "map_theme.updated", "target_type": "map_theme" },
+  { "action": "map_theme.deleted", "target_type": "map_theme" },
+  { "action": "legal_policy.created", "target_type": "legal_policy" },
+  { "action": "legal_policy.updated", "target_type": "legal_policy" },
+  { "action": "legal_policy.deleted", "target_type": "legal_policy" },
+  { "action": "file.created", "target_type": "file" },
+  { "action": "file.updated", "target_type": "file" },
+  { "action": "file.deleted", "target_type": "file" },
+  { "action": "file_folder.created", "target_type": "file_folder" },
+  { "action": "file_folder.updated", "target_type": "file_folder" },
+  { "action": "file_folder.deleted", "target_type": "file_folder" },
+  { "action": "category.created", "target_type": "category" },
+  { "action": "category.updated", "target_type": "category" },
+  { "action": "category.deleted", "target_type": "category" },
+  { "action": "tag.created", "target_type": "tag" },
+  { "action": "tag.updated", "target_type": "tag" },
+  { "action": "tag.deleted", "target_type": "tag" },
+  { "action": "genre.created", "target_type": "genre" },
+  { "action": "genre.updated", "target_type": "genre" },
+  { "action": "genre.deleted", "target_type": "genre" },
+  { "action": "style.created", "target_type": "style" },
+  { "action": "style.updated", "target_type": "style" },
+  { "action": "style.deleted", "target_type": "style" },
+  { "action": "format.created", "target_type": "format" },
+  { "action": "format.updated", "target_type": "format" },
+  { "action": "format.deleted", "target_type": "format" },
+  { "action": "client.created", "target_type": "client" },
+  { "action": "client.updated", "target_type": "client" },
+  { "action": "client.deleted", "target_type": "client" },
+  { "action": "map_place.created", "target_type": "map_place" },
+  { "action": "map_place.updated", "target_type": "map_place" },
+  { "action": "map_place.deleted", "target_type": "map_place" },
+  { "action": "audience_segment.created", "target_type": "audience_segment" },
+  { "action": "audience_segment.updated", "target_type": "audience_segment" },
+  { "action": "menu.created", "target_type": "menu" },
+  { "action": "menu.updated", "target_type": "menu" },
+  { "action": "menu.deleted", "target_type": "menu" },
+  { "action": "mail_adapter.created", "target_type": "mail_adapter" },
+  { "action": "mail_adapter.updated", "target_type": "mail_adapter" },
+  { "action": "mail_adapter.deleted", "target_type": "mail_adapter" },
+  { "action": "email_suppression.updated", "target_type": "email_suppression" },
+  {
+    "action": "translation_settings.updated",
+    "target_type": "translation_settings"
+  },
+  {
+    "action": "translation_provider.created",
+    "target_type": "translation_provider"
+  },
+  {
+    "action": "translation_provider.updated",
+    "target_type": "translation_provider"
+  },
+  {
+    "action": "translation_provider.deleted",
+    "target_type": "translation_provider"
+  },
+  { "action": "member.updated", "target_type": "member" },
+  { "action": "member_tag.created", "target_type": "member_tag" },
+  { "action": "member_tag.deleted", "target_type": "member_tag" },
+  { "action": "artist.created", "target_type": "artist" },
+  { "action": "artist.updated", "target_type": "artist" },
+  { "action": "artist.deleted", "target_type": "artist" },
+  { "action": "label.created", "target_type": "label" },
+  { "action": "label.updated", "target_type": "label" },
+  { "action": "label.deleted", "target_type": "label" },
+  { "action": "post_series.created", "target_type": "post_series" },
+  { "action": "post_series.updated", "target_type": "post_series" },
+  { "action": "post_series.deleted", "target_type": "post_series" },
+  {
+    "action": "program_event_type.created",
+    "target_type": "program_event_type"
+  },
+  {
+    "action": "program_event_type.updated",
+    "target_type": "program_event_type"
+  },
+  {
+    "action": "program_event_type.deleted",
+    "target_type": "program_event_type"
+  },
+  { "action": "program_event.created", "target_type": "program_event" },
+  { "action": "program_event.updated", "target_type": "program_event" },
+  { "action": "program_event.deleted", "target_type": "program_event" },
+  {
+    "action": "program_event_series.created",
+    "target_type": "program_event_series"
+  },
+  {
+    "action": "program_event_series.updated",
+    "target_type": "program_event_series"
+  },
+  {
+    "action": "program_event_series.deleted",
+    "target_type": "program_event_series"
+  },
+  { "action": "release.created", "target_type": "release" },
+  { "action": "release.updated", "target_type": "release" },
+  { "action": "release.deleted", "target_type": "release" },
+  { "action": "campaign.created", "target_type": "campaign" },
+  { "action": "campaign.updated", "target_type": "campaign" },
+  { "action": "campaign.deleted", "target_type": "campaign" },
+  { "action": "email_template.created", "target_type": "email_template" },
+  { "action": "email_template.updated", "target_type": "email_template" },
+  { "action": "email_template.deleted", "target_type": "email_template" },
+  { "action": "email_layout.created", "target_type": "email_layout" },
+  { "action": "email_layout.updated", "target_type": "email_layout" },
+  { "action": "email_layout.deleted", "target_type": "email_layout" },
+  {
+    "action": "email_event_mapping.updated",
+    "target_type": "email_event_mapping"
+  },
+  { "action": "form.created", "target_type": "form" },
+  { "action": "form.updated", "target_type": "form" },
+  { "action": "form.deleted", "target_type": "form" },
+  { "action": "form_submission.created", "target_type": "form_submission" },
+  { "action": "form_submission.deleted", "target_type": "form_submission" },
+  { "action": "post.created", "target_type": "post" },
+  { "action": "post.updated", "target_type": "post" },
+  { "action": "post.deleted", "target_type": "post" },
+  { "action": "page.created", "target_type": "page" },
+  { "action": "page.updated", "target_type": "page" },
+  { "action": "page.deleted", "target_type": "page" },
+  { "action": "work.created", "target_type": "work" },
+  { "action": "work.updated", "target_type": "work" },
+  { "action": "work.deleted", "target_type": "work" },
+  { "action": "account.updated", "target_type": "account" },
+  { "action": "account.deleted", "target_type": "account" }
+]

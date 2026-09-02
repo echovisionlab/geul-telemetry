@@ -1,0 +1,21 @@
+[
+  { "status_code": 100, "outcome": "succeeded" },
+  { "status_code": 200, "outcome": "succeeded" },
+  { "status_code": 302, "outcome": "succeeded" },
+  { "status_code": 400, "outcome": "failed", "reason": "client_error" },
+  {
+    "status_code": 401,
+    "outcome": "blocked",
+    "reason": "authentication_required"
+  },
+  {
+    "status_code": 403,
+    "outcome": "blocked",
+    "reason": "permission_denied"
+  },
+  { "status_code": 404, "outcome": "failed", "reason": "client_error" },
+  { "status_code": 429, "outcome": "blocked", "reason": "rate_limited" },
+  { "status_code": 499, "outcome": "failed", "reason": "client_error" },
+  { "status_code": 500, "outcome": "failed", "reason": "server_error" },
+  { "status_code": 599, "outcome": "failed", "reason": "server_error" }
+]

@@ -1,0 +1,100 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate
+    if: ${{ !startsWith(github.head_ref, 'release-please--') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          clean: true
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@0977fd99725f1db4007ccb2928dbb4e90d06cc86 # v6.0.10
+      - name: Set up Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version-file: .nvmrc
+          package-manager-cache: false
+
+      - name: Install TypeScript dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Check Prettier formatting
+        run: pnpm format:check
+
+      - name: Lint TypeScript
+        run: pnpm lint
+
+      - name: Typecheck TypeScript
+        run: pnpm typecheck
+
+      - name: Detect unused TypeScript code
+        run: pnpm deadcode
+
+      - name: Run TypeScript tests with coverage
+        run: pnpm test:coverage
+
+      - name: Dry-run TypeScript package archive
+        run: pnpm package:smoke
+      - name: Set up Go
+        uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version-file: go.mod
+          cache: false
+
+      - name: Check Go formatting
+        run: |
+          unformatted="$(find . -name '*.go' -not -path './.git/*' -exec gofmt -l {} +)"
+          if [ -n "${unformatted}" ]; then
+            printf '%s\n' "${unformatted}"
+            exit 1
+          fi
+
+      - name: Tidy Go module
+        run: go mod tidy
+
+      - name: Check Go module files
+        run: git diff --exit-code -- go.mod go.sum
+
+      - name: Run Go tests with race detection and coverage
+        run: go test -race -covermode=atomic -coverprofile="${RUNNER_TEMP}/coverage.out" ./...
+
+      - name: Show Go coverage
+        run: go tool cover -func="${RUNNER_TEMP}/coverage.out"
+
+      - name: Enforce Go coverage
+        run: |
+          total="$(go tool cover -func="${RUNNER_TEMP}/coverage.out" | awk '/^total:/ { print $3 }')"
+          if [ "${total}" != "100.0%" ]; then
+            echo "expected 100.0% statement coverage, got ${total}" >&2
+            exit 1
+          fi
+
+      - name: Run Go vet
+        run: go vet ./...
+
+      - name: Run staticcheck
+        run: go run honnef.co/go/tools/cmd/staticcheck@v0.7.0 ./...
+
+      - name: Detect dead Go code
+        run: go run golang.org/x/tools/cmd/deadcode@v0.48.0 -test ./...
+
+      - name: Build Go packages
+        run: go build ./...

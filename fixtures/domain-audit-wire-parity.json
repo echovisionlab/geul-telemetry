@@ -1,0 +1,1751 @@
+[
+  {
+    "case": "post participant author to collaborator",
+    "variant": "participant",
+    "corrected_shape": true,
+    "action": "post.updated",
+    "target_type": "post",
+    "target_id": "post-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["authors", "collaborators"],
+      "subject_member_id": "member-2",
+      "previous_relationship": "author",
+      "new_relationship": "collaborator"
+    }
+  },
+  {
+    "case": "post participant added as author",
+    "variant": "participant_author_added",
+    "action": "post.updated",
+    "target_type": "post",
+    "target_id": "post-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["authors"],
+      "subject_member_id": "member-2",
+      "previous_relationship": "none",
+      "new_relationship": "author"
+    }
+  },
+  {
+    "case": "post participant added as collaborator",
+    "variant": "participant_collaborator_added",
+    "action": "post.updated",
+    "target_type": "post",
+    "target_id": "post-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["collaborators"],
+      "subject_member_id": "member-2",
+      "previous_relationship": "none",
+      "new_relationship": "collaborator"
+    }
+  },
+  {
+    "case": "post File Block download policy",
+    "variant": "file_block_download_policy",
+    "corrected_shape": true,
+    "action": "post.updated",
+    "target_type": "post",
+    "target_id": "post-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": [
+        "file_download_audience",
+        "file_download_audience_segment_ids"
+      ],
+      "item_id": "block-1",
+      "file_id": "file-1",
+      "previous_state": "disabled",
+      "new_state": "restricted",
+      "previous_item_ids": ["segment-1"],
+      "item_ids": ["segment-2"]
+    }
+  },
+  {
+    "case": "page File Block download policy",
+    "variant": "file_block_download_policy",
+    "action": "page.updated",
+    "target_type": "page",
+    "target_id": "page-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["file_download_audience"],
+      "item_id": "block-2",
+      "file_id": "file-2",
+      "previous_state": "public",
+      "new_state": "authenticated"
+    }
+  },
+  {
+    "case": "map theme content",
+    "variant": "content",
+    "corrected_shape": true,
+    "action": "map_theme.updated",
+    "target_type": "map_theme",
+    "target_id": "theme-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["content"]
+    }
+  },
+  {
+    "case": "site settings fields",
+    "variant": "configuration",
+    "action": "site_settings.updated",
+    "target_type": "site_settings",
+    "target_id": "1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["site_title"] }
+  },
+  {
+    "case": "post version",
+    "variant": "version",
+    "action": "post.updated",
+    "target_type": "post",
+    "target_id": "post-1",
+    "actor_kind": "system",
+    "actor_service": "geul-collab",
+    "attributes": {
+      "changed_fields": ["version"],
+      "version_id": "version-1",
+      "contributor_member_ids": ["1b6bcad2-c90d-49e9-bec7-f9a4ba6b2894"]
+    }
+  },
+  {
+    "case": "post configuration",
+    "variant": "configuration",
+    "action": "post.updated",
+    "target_type": "post",
+    "target_id": "post-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["slug"] }
+  },
+  {
+    "case": "post lifecycle status",
+    "variant": "lifecycle_status",
+    "action": "post.updated",
+    "target_type": "post",
+    "target_id": "post-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["status"],
+      "previous_state": "draft",
+      "new_state": "published"
+    }
+  },
+  {
+    "case": "post lifecycle schedule",
+    "variant": "lifecycle_schedule",
+    "action": "post.updated",
+    "target_type": "post",
+    "target_id": "post-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["schedule"],
+      "previous_state": "draft",
+      "new_state": "scheduled",
+      "scheduled_at": "2026-09-01T00:00:00Z",
+      "scheduled_time_zone": "Asia/Seoul"
+    }
+  },
+  {
+    "case": "post featured image",
+    "variant": "featured_image",
+    "action": "post.updated",
+    "target_type": "post",
+    "target_id": "post-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["featured_image"],
+      "collection_operation": "added",
+      "asset_id": "asset-1"
+    }
+  },
+  {
+    "case": "post share link",
+    "variant": "share_link",
+    "action": "post.updated",
+    "target_type": "post",
+    "target_id": "post-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["share_links"],
+      "item_operation": "created",
+      "item_id": "link-1"
+    }
+  },
+  {
+    "case": "post comment",
+    "variant": "comment",
+    "action": "post.updated",
+    "target_type": "post",
+    "target_id": "post-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["comments"],
+      "item_operation": "updated",
+      "item_id": "comment-1"
+    }
+  },
+  {
+    "case": "post version restore",
+    "variant": "version_restore",
+    "action": "post.updated",
+    "target_type": "post",
+    "target_id": "post-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["version_restore"],
+      "version_id": "version-1"
+    }
+  },
+  {
+    "case": "page version",
+    "variant": "version",
+    "action": "page.updated",
+    "target_type": "page",
+    "target_id": "page-1",
+    "actor_kind": "system",
+    "actor_service": "geul-collab",
+    "attributes": {
+      "changed_fields": ["version"],
+      "version_id": "version-1",
+      "contributor_member_ids": ["1b6bcad2-c90d-49e9-bec7-f9a4ba6b2894"]
+    }
+  },
+  {
+    "case": "page configuration",
+    "variant": "configuration",
+    "action": "page.updated",
+    "target_type": "page",
+    "target_id": "page-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["slug"] }
+  },
+  {
+    "case": "page lifecycle",
+    "variant": "lifecycle",
+    "action": "page.updated",
+    "target_type": "page",
+    "target_id": "page-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["status"],
+      "previous_state": "draft",
+      "new_state": "published"
+    }
+  },
+  {
+    "case": "page featured image",
+    "variant": "featured_image",
+    "action": "page.updated",
+    "target_type": "page",
+    "target_id": "page-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["featured_image"],
+      "collection_operation": "added",
+      "asset_id": "asset-1"
+    }
+  },
+  {
+    "case": "page share link",
+    "variant": "share_link",
+    "action": "page.updated",
+    "target_type": "page",
+    "target_id": "page-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["share_links"],
+      "item_operation": "created",
+      "item_id": "link-1"
+    }
+  },
+  {
+    "case": "page version restore",
+    "variant": "version_restore",
+    "action": "page.updated",
+    "target_type": "page",
+    "target_id": "page-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["version_restore"],
+      "version_id": "version-1"
+    }
+  },
+  {
+    "case": "work version",
+    "variant": "version",
+    "action": "work.updated",
+    "target_type": "work",
+    "target_id": "work-1",
+    "actor_kind": "system",
+    "actor_service": "geul-collab",
+    "attributes": {
+      "changed_fields": ["version"],
+      "version_id": "version-1",
+      "contributor_member_ids": ["1b6bcad2-c90d-49e9-bec7-f9a4ba6b2894"]
+    }
+  },
+  {
+    "case": "work metadata",
+    "variant": "metadata",
+    "action": "work.updated",
+    "target_type": "work",
+    "target_id": "work-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["slug"] }
+  },
+  {
+    "case": "work lifecycle",
+    "variant": "lifecycle",
+    "action": "work.updated",
+    "target_type": "work",
+    "target_id": "work-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["status"],
+      "previous_state": "draft",
+      "new_state": "published"
+    }
+  },
+  {
+    "case": "work featured image",
+    "variant": "featured_image",
+    "action": "work.updated",
+    "target_type": "work",
+    "target_id": "work-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["featured_image"],
+      "collection_operation": "added",
+      "asset_id": "asset-1"
+    }
+  },
+  {
+    "case": "work credit",
+    "variant": "credit",
+    "action": "work.updated",
+    "target_type": "work",
+    "target_id": "work-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["credits"],
+      "item_operation": "updated",
+      "item_id": "credit-1"
+    }
+  },
+  {
+    "case": "work share link",
+    "variant": "share_link",
+    "action": "work.updated",
+    "target_type": "work",
+    "target_id": "work-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["share_links"],
+      "item_operation": "created",
+      "item_id": "link-1"
+    }
+  },
+  {
+    "case": "work version restore",
+    "variant": "version_restore",
+    "action": "work.updated",
+    "target_type": "work",
+    "target_id": "work-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["version_restore"],
+      "version_id": "version-1"
+    }
+  },
+  {
+    "case": "legal lifecycle",
+    "variant": "lifecycle",
+    "action": "legal_policy.updated",
+    "target_type": "legal_policy",
+    "target_id": "policy-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["status"],
+      "policy_type": "terms",
+      "version_number": 1,
+      "previous_state": "draft",
+      "new_state": "scheduled"
+    }
+  },
+  {
+    "case": "legal lifecycle effective schedule",
+    "variant": "lifecycle_effective_schedule",
+    "action": "legal_policy.updated",
+    "target_type": "legal_policy",
+    "target_id": "policy-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["effective_at", "status"],
+      "policy_type": "terms",
+      "version_number": 1,
+      "previous_state": "draft",
+      "new_state": "scheduled",
+      "effective_at": "2026-09-01T00:00:00Z"
+    }
+  },
+  {
+    "case": "legal share link",
+    "variant": "share_link",
+    "action": "legal_policy.updated",
+    "target_type": "legal_policy",
+    "target_id": "policy-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["share_links"],
+      "policy_type": "terms",
+      "version_number": 1,
+      "item_operation": "created",
+      "item_id": "link-1"
+    }
+  },
+  {
+    "case": "file rename",
+    "variant": "rename",
+    "action": "file.updated",
+    "target_type": "file",
+    "target_id": "file-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["file_name"] }
+  },
+  {
+    "case": "file move",
+    "variant": "move",
+    "action": "file.updated",
+    "target_type": "file",
+    "target_id": "file-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["folder_id"],
+      "previous_parent_id": "folder-1"
+    }
+  },
+  {
+    "case": "file move between folders",
+    "variant": "move_between_folders",
+    "action": "file.updated",
+    "target_type": "file",
+    "target_id": "file-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["folder_id"],
+      "previous_parent_id": "folder-1",
+      "new_parent_id": "folder-2"
+    }
+  },
+  {
+    "case": "work File Block download policy",
+    "variant": "file_block_download_policy",
+    "action": "work.updated",
+    "target_type": "work",
+    "target_id": "work-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["file_download_audience_segment_ids"],
+      "item_id": "block-3",
+      "file_id": "file-3",
+      "previous_item_ids": [],
+      "item_ids": ["segment-1"]
+    }
+  },
+  {
+    "case": "program event File Block download policy",
+    "variant": "file_block_download_policy",
+    "action": "program_event.updated",
+    "target_type": "program_event",
+    "target_id": "event-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": [
+        "file_download_audience",
+        "file_download_audience_segment_ids"
+      ],
+      "item_id": "block-4",
+      "file_id": "file-4",
+      "previous_state": "restricted",
+      "new_state": "public",
+      "previous_item_ids": ["segment-1"],
+      "item_ids": []
+    }
+  },
+  {
+    "case": "release Track download policy",
+    "variant": "track_download_policy",
+    "action": "release.updated",
+    "target_type": "release",
+    "target_id": "release-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["file_download_audience"],
+      "item_id": "track-1",
+      "file_id": "file-5",
+      "previous_state": "disabled",
+      "new_state": "public"
+    }
+  },
+  {
+    "case": "folder rename",
+    "variant": "rename",
+    "action": "file_folder.updated",
+    "target_type": "file_folder",
+    "target_id": "folder-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["name"] }
+  },
+  {
+    "case": "folder move",
+    "variant": "move",
+    "action": "file_folder.updated",
+    "target_type": "file_folder",
+    "target_id": "folder-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["parent_id"],
+      "new_parent_id": "folder-2"
+    }
+  },
+  {
+    "case": "folder move between parents",
+    "variant": "move_between_parents",
+    "action": "file_folder.updated",
+    "target_type": "file_folder",
+    "target_id": "folder-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["parent_id"],
+      "previous_parent_id": "folder-2",
+      "new_parent_id": "folder-3"
+    }
+  },
+  {
+    "case": "category metadata",
+    "variant": "metadata",
+    "action": "category.updated",
+    "target_type": "category",
+    "target_id": "category-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["name"] }
+  },
+  {
+    "case": "tag metadata",
+    "variant": "metadata",
+    "action": "tag.updated",
+    "target_type": "tag",
+    "target_id": "tag-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["name"] }
+  },
+  {
+    "case": "genre metadata",
+    "variant": "metadata",
+    "action": "genre.updated",
+    "target_type": "genre",
+    "target_id": "genre-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["name"] }
+  },
+  {
+    "case": "style metadata",
+    "variant": "metadata",
+    "action": "style.updated",
+    "target_type": "style",
+    "target_id": "style-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["name"] }
+  },
+  {
+    "case": "format metadata",
+    "variant": "metadata",
+    "action": "format.updated",
+    "target_type": "format",
+    "target_id": "format-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["name"] }
+  },
+  {
+    "case": "client metadata",
+    "variant": "metadata",
+    "action": "client.updated",
+    "target_type": "client",
+    "target_id": "client-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["name"] }
+  },
+  {
+    "case": "client logo",
+    "variant": "logo",
+    "action": "client.updated",
+    "target_type": "client",
+    "target_id": "client-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["logo"],
+      "asset_slot": "light",
+      "collection_operation": "added",
+      "file_id": "file-1"
+    }
+  },
+  {
+    "case": "map place metadata",
+    "variant": "metadata",
+    "action": "map_place.updated",
+    "target_type": "map_place",
+    "target_id": "place-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["name"] }
+  },
+  {
+    "case": "map place image",
+    "variant": "image",
+    "action": "map_place.updated",
+    "target_type": "map_place",
+    "target_id": "place-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["image"],
+      "collection_operation": "added",
+      "file_id": "file-1"
+    }
+  },
+  {
+    "case": "audience config",
+    "variant": "configuration",
+    "action": "audience_segment.updated",
+    "target_type": "audience_segment",
+    "target_id": "audience-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["name"] }
+  },
+  {
+    "case": "audience lifecycle",
+    "variant": "lifecycle",
+    "action": "audience_segment.updated",
+    "target_type": "audience_segment",
+    "target_id": "audience-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["status"],
+      "previous_state": "active",
+      "new_state": "archived"
+    }
+  },
+  {
+    "case": "menu source",
+    "variant": "source",
+    "action": "menu.updated",
+    "target_type": "menu",
+    "target_id": "menu-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["name"] }
+  },
+  {
+    "case": "mail adapter config",
+    "variant": "configuration",
+    "action": "mail_adapter.updated",
+    "target_type": "mail_adapter",
+    "target_id": "adapter-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["name"] }
+  },
+  {
+    "case": "translation settings",
+    "variant": "configuration",
+    "action": "translation_settings.updated",
+    "target_type": "translation_settings",
+    "target_id": "1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["default_locale"] }
+  },
+  {
+    "case": "translation provider config",
+    "variant": "configuration",
+    "action": "translation_provider.updated",
+    "target_type": "translation_provider",
+    "target_id": "provider-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["name"] }
+  },
+  {
+    "case": "email suppression release",
+    "variant": "lifecycle",
+    "action": "email_suppression.updated",
+    "target_type": "email_suppression",
+    "target_id": "suppression-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["status"],
+      "previous_state": "active",
+      "new_state": "released"
+    }
+  },
+  {
+    "case": "artist lifecycle",
+    "variant": "lifecycle",
+    "action": "artist.updated",
+    "target_type": "artist",
+    "target_id": "artist-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["status"],
+      "previous_state": "draft",
+      "new_state": "published"
+    }
+  },
+  {
+    "case": "artist gallery",
+    "variant": "gallery",
+    "action": "artist.updated",
+    "target_type": "artist",
+    "target_id": "artist-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["gallery"],
+      "file_ids": ["file-1", "file-2"]
+    }
+  },
+  {
+    "case": "artist participant",
+    "variant": "participant",
+    "action": "artist.updated",
+    "target_type": "artist",
+    "target_id": "artist-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["participants"],
+      "subject_member_id": "member-2",
+      "previous_relationship": "none",
+      "new_relationship": "owner"
+    }
+  },
+  {
+    "case": "artist share link",
+    "variant": "share_link",
+    "action": "artist.updated",
+    "target_type": "artist",
+    "target_id": "artist-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["share_links"],
+      "item_operation": "created",
+      "item_id": "link-1"
+    }
+  },
+  {
+    "case": "label lifecycle",
+    "variant": "lifecycle",
+    "action": "label.updated",
+    "target_type": "label",
+    "target_id": "label-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["status"],
+      "previous_state": "draft",
+      "new_state": "published"
+    }
+  },
+  {
+    "case": "label participant",
+    "variant": "participant",
+    "action": "label.updated",
+    "target_type": "label",
+    "target_id": "label-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["participants"],
+      "subject_member_id": "member-2",
+      "previous_relationship": "none",
+      "new_relationship": "manager"
+    }
+  },
+  {
+    "case": "label logo",
+    "variant": "logo",
+    "action": "label.updated",
+    "target_type": "label",
+    "target_id": "label-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["logo"],
+      "asset_slot": "light",
+      "collection_operation": "added",
+      "asset_id": "asset-1"
+    }
+  },
+  {
+    "case": "label share link",
+    "variant": "share_link",
+    "action": "label.updated",
+    "target_type": "label",
+    "target_id": "label-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["share_links"],
+      "item_operation": "created",
+      "item_id": "link-1"
+    }
+  },
+  {
+    "case": "post series metadata",
+    "variant": "source_metadata",
+    "action": "post_series.updated",
+    "target_type": "post_series",
+    "target_id": "series-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["slug"] }
+  },
+  {
+    "case": "post series lifecycle",
+    "variant": "lifecycle",
+    "action": "post_series.updated",
+    "target_type": "post_series",
+    "target_id": "series-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["status"],
+      "previous_state": "draft",
+      "new_state": "published"
+    }
+  },
+  {
+    "case": "post series manager",
+    "variant": "manager",
+    "action": "post_series.updated",
+    "target_type": "post_series",
+    "target_id": "series-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["managers"],
+      "subject_member_id": "member-2",
+      "previous_relationship": "none",
+      "new_relationship": "manager"
+    }
+  },
+  {
+    "case": "post series membership",
+    "variant": "membership",
+    "action": "post_series.updated",
+    "target_type": "post_series",
+    "target_id": "series-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["posts"],
+      "subject_post_id": "post-1",
+      "new_series_id": "series-1"
+    }
+  },
+  {
+    "case": "post series order",
+    "variant": "order",
+    "action": "post_series.updated",
+    "target_type": "post_series",
+    "target_id": "series-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["post_order"],
+      "post_ids": ["post-2", "post-1"]
+    }
+  },
+  {
+    "case": "post series membership move",
+    "variant": "membership_move",
+    "action": "post_series.updated",
+    "target_type": "post_series",
+    "target_id": "series-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["posts"],
+      "subject_post_id": "post-1",
+      "previous_series_id": "series-2",
+      "new_series_id": "series-1"
+    }
+  },
+  {
+    "case": "post series membership clear",
+    "variant": "membership_clear",
+    "action": "post_series.updated",
+    "target_type": "post_series",
+    "target_id": "series-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["posts"],
+      "subject_post_id": "post-1",
+      "previous_series_id": "series-1"
+    }
+  },
+  {
+    "case": "post series featured image",
+    "variant": "featured_image",
+    "action": "post_series.updated",
+    "target_type": "post_series",
+    "target_id": "series-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["featured_image"],
+      "collection_operation": "added",
+      "file_id": "file-1"
+    }
+  },
+  {
+    "case": "program event type config",
+    "variant": "configuration",
+    "action": "program_event_type.updated",
+    "target_type": "program_event_type",
+    "target_id": "type-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["slug"] }
+  },
+  {
+    "case": "program event metadata",
+    "variant": "metadata",
+    "action": "program_event.updated",
+    "target_type": "program_event",
+    "target_id": "event-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["slug"] }
+  },
+  {
+    "case": "program event poster",
+    "variant": "poster",
+    "action": "program_event.updated",
+    "target_type": "program_event",
+    "target_id": "event-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["poster"],
+      "collection_operation": "added",
+      "file_id": "file-1"
+    }
+  },
+  {
+    "case": "program event media",
+    "variant": "child",
+    "action": "program_event.updated",
+    "target_type": "program_event",
+    "target_id": "event-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["media"],
+      "item_operation": "created",
+      "item_id": "media-1"
+    }
+  },
+  {
+    "case": "program event child order",
+    "variant": "child_order",
+    "action": "program_event.updated",
+    "target_type": "program_event",
+    "target_id": "event-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["credits"],
+      "item_ids": ["credit-2", "credit-1"]
+    }
+  },
+  {
+    "case": "program event lifecycle",
+    "variant": "lifecycle",
+    "action": "program_event.updated",
+    "target_type": "program_event",
+    "target_id": "event-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["status"],
+      "previous_state": "draft",
+      "new_state": "published"
+    }
+  },
+  {
+    "case": "program event series metadata",
+    "variant": "metadata",
+    "action": "program_event_series.updated",
+    "target_type": "program_event_series",
+    "target_id": "event-series-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["title"] }
+  },
+  {
+    "case": "program event series poster",
+    "variant": "poster",
+    "action": "program_event_series.updated",
+    "target_type": "program_event_series",
+    "target_id": "event-series-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["poster"],
+      "collection_operation": "added",
+      "file_id": "file-1"
+    }
+  },
+  {
+    "case": "program event series lifecycle",
+    "variant": "lifecycle",
+    "action": "program_event_series.updated",
+    "target_type": "program_event_series",
+    "target_id": "event-series-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["status"],
+      "previous_state": "draft",
+      "new_state": "published"
+    }
+  },
+  {
+    "case": "release metadata",
+    "variant": "metadata",
+    "action": "release.updated",
+    "target_type": "release",
+    "target_id": "release-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["slug"] }
+  },
+  {
+    "case": "release track",
+    "variant": "track",
+    "action": "release.updated",
+    "target_type": "release",
+    "target_id": "release-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["tracks"],
+      "item_operation": "created",
+      "item_id": "track-1"
+    }
+  },
+  {
+    "case": "release track order",
+    "variant": "track_order",
+    "action": "release.updated",
+    "target_type": "release",
+    "target_id": "release-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["tracks"],
+      "item_ids": ["track-2", "track-1"]
+    }
+  },
+  {
+    "case": "release track audio",
+    "variant": "track_audio",
+    "action": "release.updated",
+    "target_type": "release",
+    "target_id": "release-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["track_audio"],
+      "collection_operation": "added",
+      "item_id": "track-1",
+      "file_id": "file-1"
+    }
+  },
+  {
+    "case": "release artwork",
+    "variant": "artwork",
+    "action": "release.updated",
+    "target_type": "release",
+    "target_id": "release-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["artwork"],
+      "collection_operation": "added",
+      "file_id": "file-1"
+    }
+  },
+  {
+    "case": "release lifecycle",
+    "variant": "lifecycle",
+    "action": "release.updated",
+    "target_type": "release",
+    "target_id": "release-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["status"],
+      "previous_state": "draft",
+      "new_state": "published"
+    }
+  },
+  {
+    "case": "release share link",
+    "variant": "share_link",
+    "action": "release.updated",
+    "target_type": "release",
+    "target_id": "release-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["share_links"],
+      "item_operation": "created",
+      "item_id": "link-1"
+    }
+  },
+  {
+    "case": "campaign target layout",
+    "variant": "target_layout",
+    "action": "campaign.updated",
+    "target_type": "campaign",
+    "target_id": "campaign-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["layout"] }
+  },
+  {
+    "case": "campaign lifecycle",
+    "variant": "lifecycle",
+    "action": "campaign.updated",
+    "target_type": "campaign",
+    "target_id": "campaign-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["status"],
+      "previous_state": "draft",
+      "new_state": "scheduled"
+    }
+  },
+  {
+    "case": "campaign schedule",
+    "variant": "schedule",
+    "action": "campaign.updated",
+    "target_type": "campaign",
+    "target_id": "campaign-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["schedule"],
+      "previous_state": "draft",
+      "new_state": "scheduled",
+      "scheduled_at": "2026-09-01T00:00:00Z"
+    }
+  },
+  {
+    "case": "campaign delivery run lifecycle",
+    "variant": "delivery_run",
+    "action": "campaign.updated",
+    "target_type": "campaign",
+    "target_id": "campaign-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["delivery_run"],
+      "previous_state": "scheduled",
+      "new_state": "sending",
+      "item_id": "run-1"
+    }
+  },
+  {
+    "case": "template metadata",
+    "variant": "metadata",
+    "action": "email_template.updated",
+    "target_type": "email_template",
+    "target_id": "template-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["name"] }
+  },
+  {
+    "case": "template layout",
+    "variant": "layout_relation",
+    "action": "email_template.updated",
+    "target_type": "email_template",
+    "target_id": "template-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["layout"], "item_id": "layout-1" }
+  },
+  {
+    "case": "template layout replacement",
+    "variant": "layout_relation_replace",
+    "action": "email_template.updated",
+    "target_type": "email_template",
+    "target_id": "template-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["layout"],
+      "previous_item_id": "layout-2",
+      "item_id": "layout-1"
+    }
+  },
+  {
+    "case": "template layout cleared",
+    "variant": "layout_relation_clear",
+    "action": "email_template.updated",
+    "target_type": "email_template",
+    "target_id": "template-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["layout"],
+      "previous_item_id": "layout-1"
+    }
+  },
+  {
+    "case": "layout metadata",
+    "variant": "metadata",
+    "action": "email_layout.updated",
+    "target_type": "email_layout",
+    "target_id": "layout-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["name"] }
+  },
+  {
+    "case": "email event mapping",
+    "variant": "template_relation",
+    "action": "email_event_mapping.updated",
+    "target_type": "email_event_mapping",
+    "target_id": "welcome",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["template"],
+      "event_name": "welcome",
+      "item_id": "template-1"
+    }
+  },
+  {
+    "case": "email event mapping replacement",
+    "variant": "template_relation_replace",
+    "action": "email_event_mapping.updated",
+    "target_type": "email_event_mapping",
+    "target_id": "welcome",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["template"],
+      "event_name": "welcome",
+      "previous_item_id": "template-2",
+      "item_id": "template-1"
+    }
+  },
+  {
+    "case": "email event mapping cleared",
+    "variant": "template_relation_clear",
+    "action": "email_event_mapping.updated",
+    "target_type": "email_event_mapping",
+    "target_id": "welcome",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["template"],
+      "event_name": "welcome",
+      "previous_item_id": "template-1"
+    }
+  },
+  {
+    "case": "form settings",
+    "variant": "settings",
+    "action": "form.updated",
+    "target_type": "form",
+    "target_id": "form-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["slug"] }
+  },
+  {
+    "case": "form lifecycle",
+    "variant": "lifecycle",
+    "action": "form.updated",
+    "target_type": "form",
+    "target_id": "form-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["status"],
+      "previous_state": "draft",
+      "new_state": "published"
+    }
+  },
+  {
+    "case": "form featured image",
+    "variant": "featured_image",
+    "action": "form.updated",
+    "target_type": "form",
+    "target_id": "form-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["featured_image"],
+      "collection_operation": "added",
+      "file_id": "file-1"
+    }
+  },
+  {
+    "case": "form share link",
+    "variant": "share_link",
+    "action": "form.updated",
+    "target_type": "form",
+    "target_id": "form-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["share_links"],
+      "item_operation": "created",
+      "item_scope": "form",
+      "item_id": "link-1"
+    }
+  },
+  {
+    "case": "anonymous form submission",
+    "variant": "submission",
+    "action": "form_submission.created",
+    "target_type": "form_submission",
+    "target_id": "submission-1",
+    "actor_kind": "anonymous",
+    "attributes": { "parent_id": "form-1" }
+  },
+  {
+    "case": "member onboarding",
+    "variant": "onboarding",
+    "action": "member.updated",
+    "target_type": "member",
+    "target_id": "member-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["nickname", "onboarded"],
+      "nickname": "Member"
+    }
+  },
+  {
+    "case": "member profile",
+    "variant": "profile",
+    "action": "member.updated",
+    "target_type": "member",
+    "target_id": "member-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["nickname"], "nickname": "Member" }
+  },
+  {
+    "case": "member profile fields without nickname",
+    "variant": "profile_without_nickname",
+    "action": "member.updated",
+    "target_type": "member",
+    "target_id": "member-1",
+    "actor_kind": "member",
+    "attributes": { "changed_fields": ["bio", "website"] }
+  },
+  {
+    "case": "member avatar",
+    "variant": "avatar",
+    "action": "member.updated",
+    "target_type": "member",
+    "target_id": "member-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["avatar"],
+      "collection_operation": "added",
+      "asset_id": "asset-1"
+    }
+  },
+  {
+    "case": "member preference",
+    "variant": "preference",
+    "action": "member.updated",
+    "target_type": "member",
+    "target_id": "member-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["preferred_locale"],
+      "preferred_locale": "ko"
+    }
+  },
+  {
+    "case": "member cookie consent preference",
+    "variant": "preference_cookie_consent",
+    "action": "member.updated",
+    "target_type": "member",
+    "target_id": "member-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["cookie_consent"],
+      "consent_id": "consent-1"
+    }
+  },
+  {
+    "case": "member tags",
+    "variant": "tags",
+    "action": "member.updated",
+    "target_type": "member",
+    "target_id": "member-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["tags"],
+      "tag_ids": ["tag-1", "tag-2"]
+    }
+  },
+  {
+    "case": "member role",
+    "variant": "role",
+    "action": "member.updated",
+    "target_type": "member",
+    "target_id": "member-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["role"],
+      "previous_role": "user",
+      "new_role": "author"
+    }
+  },
+  {
+    "case": "member status",
+    "variant": "status",
+    "action": "member.updated",
+    "target_type": "member",
+    "target_id": "member-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["status"],
+      "previous_state": "active",
+      "new_state": "banned"
+    }
+  },
+  {
+    "case": "member unban system",
+    "variant": "status_unban",
+    "action": "member.updated",
+    "target_type": "member",
+    "target_id": "member-1",
+    "actor_kind": "system",
+    "actor_service": "geul-backend",
+    "attributes": {
+      "changed_fields": ["status"],
+      "previous_state": "banned",
+      "new_state": "active"
+    }
+  },
+  {
+    "case": "account canonical email",
+    "variant": "canonical_email",
+    "action": "account.updated",
+    "target_type": "account",
+    "target_id": "member-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["canonical_email"],
+      "previous_email": "old@example.test",
+      "new_email": "new@example.test"
+    }
+  },
+  {
+    "case": "account email login",
+    "variant": "login_email",
+    "action": "account.updated",
+    "target_type": "account",
+    "target_id": "member-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["login_emails"],
+      "collection_operation": "added",
+      "email": "new@example.test"
+    }
+  },
+  {
+    "case": "account social login",
+    "variant": "social_login",
+    "action": "account.updated",
+    "target_type": "account",
+    "target_id": "member-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["social_logins"],
+      "collection_operation": "added",
+      "provider": "google",
+      "provider_subject": "google-subject"
+    }
+  },
+  {
+    "case": "account passkey",
+    "variant": "passkey",
+    "action": "account.updated",
+    "target_type": "account",
+    "target_id": "member-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["passkeys"],
+      "collection_operation": "added",
+      "passkey_ids": ["passkey-1"]
+    }
+  },
+  {
+    "case": "account sessions",
+    "variant": "session",
+    "action": "account.updated",
+    "target_type": "account",
+    "target_id": "member-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["sessions"],
+      "collection_operation": "removed",
+      "session_scope": "others",
+      "session_ids": [
+        "018f47a2-8a3d-4e17-9d42-6f12c89b1234",
+        "018f47a2-8a3d-4e17-9d42-6f12c89b5678"
+      ]
+    }
+  },
+  {
+    "case": "account newsletter",
+    "variant": "newsletter",
+    "action": "account.updated",
+    "target_type": "account",
+    "target_id": "member-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["newsletter_subscription"],
+      "previous_state": "subscribed",
+      "new_state": "unsubscribed"
+    }
+  },
+  {
+    "case": "account deletion lifecycle",
+    "variant": "deletion_state",
+    "action": "account.updated",
+    "target_type": "account",
+    "target_id": "member-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["deletion_state"],
+      "previous_state": "none",
+      "new_state": "confirmation_pending"
+    }
+  },
+  {
+    "case": "account deletion scheduled",
+    "variant": "deletion_scheduled",
+    "action": "account.updated",
+    "target_type": "account",
+    "target_id": "member-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["deletion_state"],
+      "previous_state": "confirmation_pending",
+      "new_state": "scheduled"
+    }
+  },
+  {
+    "case": "account deletion cancelled",
+    "variant": "deletion_cancelled",
+    "action": "account.updated",
+    "target_type": "account",
+    "target_id": "member-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["deletion_state"],
+      "previous_state": "scheduled",
+      "new_state": "cancelled"
+    }
+  },
+  {
+    "case": "account deletion recovered",
+    "variant": "deletion_recovered",
+    "action": "account.updated",
+    "target_type": "account",
+    "target_id": "member-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["deletion_state"],
+      "previous_state": "recovery_confirmation_pending",
+      "new_state": "recovered"
+    }
+  },
+  {
+    "case": "account deleted system",
+    "variant": "deleted",
+    "action": "account.deleted",
+    "target_type": "account",
+    "target_id": "member-1",
+    "actor_kind": "system",
+    "actor_service": "geul-backend",
+    "attributes": {}
+  },
+  {
+    "case": "post source locale",
+    "variant": "source_locale",
+    "action": "post.updated",
+    "target_type": "post",
+    "target_id": "post-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["source_locale"],
+      "previous_locale": "en",
+      "new_locale": "zh-CN"
+    }
+  },
+  {
+    "case": "page source locale",
+    "variant": "source_locale",
+    "action": "page.updated",
+    "target_type": "page",
+    "target_id": "page-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["source_locale"],
+      "previous_locale": "en",
+      "new_locale": "ko"
+    }
+  },
+  {
+    "case": "work source locale",
+    "variant": "source_locale",
+    "action": "work.updated",
+    "target_type": "work",
+    "target_id": "work-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["source_locale"],
+      "previous_locale": "en",
+      "new_locale": "ko"
+    }
+  },
+  {
+    "case": "post series source locale",
+    "variant": "source_locale",
+    "action": "post_series.updated",
+    "target_type": "post_series",
+    "target_id": "series-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["source_locale"],
+      "previous_locale": "en",
+      "new_locale": "ko"
+    }
+  },
+  {
+    "case": "program event source locale",
+    "variant": "source_locale",
+    "action": "program_event.updated",
+    "target_type": "program_event",
+    "target_id": "event-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["source_locale"],
+      "previous_locale": "en",
+      "new_locale": "ko"
+    }
+  },
+  {
+    "case": "release source locale",
+    "variant": "source_locale",
+    "action": "release.updated",
+    "target_type": "release",
+    "target_id": "release-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["source_locale"],
+      "previous_locale": "en",
+      "new_locale": "ko"
+    }
+  },
+  {
+    "case": "artist source locale",
+    "variant": "source_locale",
+    "action": "artist.updated",
+    "target_type": "artist",
+    "target_id": "artist-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["source_locale"],
+      "previous_locale": "en",
+      "new_locale": "ko"
+    }
+  },
+  {
+    "case": "label source locale",
+    "variant": "source_locale",
+    "action": "label.updated",
+    "target_type": "label",
+    "target_id": "label-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["source_locale"],
+      "previous_locale": "en",
+      "new_locale": "ko"
+    }
+  },
+  {
+    "case": "menu source locale",
+    "variant": "source_locale",
+    "action": "menu.updated",
+    "target_type": "menu",
+    "target_id": "menu-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["source_locale"],
+      "previous_locale": "en",
+      "new_locale": "ko"
+    }
+  },
+  {
+    "case": "campaign source locale",
+    "variant": "source_locale",
+    "action": "campaign.updated",
+    "target_type": "campaign",
+    "target_id": "campaign-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["source_locale"],
+      "previous_locale": "en",
+      "new_locale": "ko"
+    }
+  },
+  {
+    "case": "form source locale",
+    "variant": "source_locale",
+    "action": "form.updated",
+    "target_type": "form",
+    "target_id": "form-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["source_locale"],
+      "previous_locale": "en",
+      "new_locale": "ko"
+    }
+  },
+  {
+    "case": "email template source locale",
+    "variant": "source_locale",
+    "action": "email_template.updated",
+    "target_type": "email_template",
+    "target_id": "template-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["source_locale"],
+      "previous_locale": "en",
+      "new_locale": "ko"
+    }
+  },
+  {
+    "case": "email layout source locale",
+    "variant": "source_locale",
+    "action": "email_layout.updated",
+    "target_type": "email_layout",
+    "target_id": "layout-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["source_locale"],
+      "previous_locale": "en",
+      "new_locale": "ko"
+    }
+  },
+  {
+    "case": "privacy source locale",
+    "variant": "source_locale",
+    "action": "legal_policy.updated",
+    "target_type": "legal_policy",
+    "target_id": "privacy-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["source_locale"],
+      "policy_type": "privacy",
+      "version_number": 2,
+      "previous_locale": "en",
+      "new_locale": "ko"
+    }
+  },
+  {
+    "case": "terms source locale",
+    "variant": "source_locale",
+    "action": "legal_policy.updated",
+    "target_type": "legal_policy",
+    "target_id": "terms-1",
+    "actor_kind": "member",
+    "attributes": {
+      "changed_fields": ["source_locale"],
+      "policy_type": "terms",
+      "version_number": 1,
+      "previous_locale": "en",
+      "new_locale": "ko"
+    }
+  }
+]
