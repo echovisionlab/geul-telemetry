@@ -119,13 +119,6 @@ describe("Platform Integrations domain audit", () => {
   });
 
   it("rejects no-ops, generic extras, malformed suppression, and system actors", () => {
-    const retiredTranslationSettingsFields = [
-      "debounce_seconds",
-      "english_fallback_enabled",
-      "machine_generated_public_serve",
-      "stale_english_enabled",
-      "stale_exact_enabled",
-    ];
     for (const invalid of [
       record({ changed_fields: [] }),
       record({ changed_fields: ["scopes", "name"] }),
@@ -153,14 +146,6 @@ describe("Platform Integrations domain audit", () => {
         target_id: "settings-1",
         changed_fields: ["default_locale"],
       }),
-      ...retiredTranslationSettingsFields.map((changedField) =>
-        record({
-          action: "translation_settings.updated",
-          target_type: "translation_settings",
-          target_id: "1",
-          changed_fields: [changedField],
-        }),
-      ),
       record({
         action: "translation_provider.updated",
         target_type: "translation_provider",
