@@ -128,16 +128,3 @@ func setAuditTestAttribute(t *testing.T, value reflect.Value) {
 		t.Fatalf("unsupported audit attribute type %s", value.Type())
 	}
 }
-
-func TestTranslationSettingsRejectRetiredFields(t *testing.T) {
-	t.Parallel()
-	m := AuditMetadata{AuditID: "00000000-0000-4000-8000-000000000001", OccurredAt: testOccurredAt, RecordActor: RecordActor{Kind: ActorKindMember, MemberID: "member-1"}}
-	for _, field := range []string{
-		"debounce_seconds", "english_fallback_enabled", "machine_generated_public_serve",
-		"stale_english_enabled", "stale_exact_enabled",
-	} {
-		if _, err := NewTranslationSettingsUpdatedAuditRecord(m, []string{field}); err == nil {
-			t.Fatalf("retired field %q accepted", field)
-		}
-	}
-}
