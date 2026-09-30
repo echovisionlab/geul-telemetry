@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/echovisionlab/geul-telemetry/compare/v0.1.2...v0.1.3) (2026-09-30)
+
+
+### Bug Fixes
+
+* **audit:** give content entity policies explicit owners ([#10](https://github.com/echovisionlab/geul-telemetry/issues/10)) ([d064710](https://github.com/echovisionlab/geul-telemetry/commit/d0647103732db77976f53d2dc0b18e4fe96bed64))
+
 ## [0.1.2](https://github.com/echovisionlab/geul-telemetry/compare/v0.1.1...v0.1.2) (2026-09-02)
 
 
