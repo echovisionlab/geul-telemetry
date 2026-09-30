@@ -13,6 +13,13 @@ pnpm add @echovisionlab/geul-telemetry
 Browser code should import the `/actor`, `/redaction`, or `/trace` subpaths.
 The package root also includes Node request context and is server-only.
 
+## Audit records
+
+Post, Page, and Work semantic builders and update validators live in their
+respective internal entity modules. The existing audit facade keeps the shared
+builder exports stable and validates records against the same typed wire
+contract and action catalog.
+
 ## Development
 
 ```sh
