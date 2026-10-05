@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.4](https://github.com/echovisionlab/geul-telemetry/compare/v0.1.3...v0.1.4) (2026-10-05)
+
+
+### Bug Fixes
+
+* **deps:** refresh telemetry dependencies and tooling ([#13](https://github.com/echovisionlab/geul-telemetry/issues/13)) ([8bbf6a7](https://github.com/echovisionlab/geul-telemetry/commit/8bbf6a76a6f9b7d8558508e4524e4d905eef5fae))
+
 ## [0.1.3](https://github.com/echovisionlab/geul-telemetry/compare/v0.1.2...v0.1.3) (2026-09-30)
 
 
