@@ -10,9 +10,9 @@
     "url": "git+https://github.com/echovisionlab/geul-telemetry.git"
   },
   "engines": {
-    "node": "24.19.0"
+    "node": "24.21.0"
   },
-  "packageManager": "pnpm@11.22.0+sha512.1ff870c4c6133dfd88fb2afc46dd13d47f09c9794b438c6fdb47ca98caf3bc16381ee0be93a091b8e3824cf01f889f46d7d9e20910fb0be1ab0fb5baa80dd621",
+  "packageManager": "pnpm@12.9.1+sha512.06b055fff5cd20dc12781de173ced3310ce0951bf2ec620211a16045d5444d5c93a663210764ef29a653a610459ba0368f0e74f84d80c54723cf95aae7bc0d6d",
   "files": [
     "README.md",
     "src",
@@ -42,15 +42,15 @@
     "@opentelemetry/api": "^1.9.1"
   },
   "devDependencies": {
-    "@types/node": "^24.13.3",
+    "@types/node": "^24.19.1",
     "@typescript/native": "npm:typescript@7.0.2",
-    "@vitest/coverage-v8": "^4.1.10",
-    "eslint": "^10.8.1",
-    "knip": "^6.32.2",
-    "prettier": "^3.9.6",
+    "@vitest/coverage-v8": "^5.0.3",
+    "eslint": "^10.12.0",
+    "knip": "^6.39.0",
+    "prettier": "^3.9.9",
     "typescript": "npm:@typescript/typescript6@6.0.2",
-    "typescript-eslint": "^8.67.0",
-    "vitest": "^4.1.10"
+    "typescript-eslint": "^8.71.1",
+    "vitest": "^5.0.3"
   },
   "license": "PolyForm-Noncommercial-1.0.0",
   "homepage": "https://github.com/echovisionlab/geul-telemetry#readme",
