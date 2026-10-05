@@ -159,6 +159,18 @@ describe("post series and program event type audit", () => {
       record({
         changed_fields: ["managers"],
         subject_member_id: "member-2",
+        previous_relationship: undefined,
+        new_relationship: "manager",
+      }),
+      record({
+        changed_fields: ["managers"],
+        subject_member_id: "member-2",
+        previous_relationship: "none",
+        new_relationship: undefined,
+      }),
+      record({
+        changed_fields: ["managers"],
+        subject_member_id: "member-2",
         previous_relationship: "owner",
         new_relationship: "manager",
       }),

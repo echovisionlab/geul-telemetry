@@ -1084,7 +1084,7 @@ function validateSystemRequiredFields(record: SystemRecord): void {
           ...COLLABORATION_CONFLICT_REASONS,
           "persist_failed",
         ].includes(record.reason ?? "") ||
-        (COLLABORATION_CONFLICT_REASONS.includes(record.reason ?? "") &&
+        (COLLABORATION_CONFLICT_REASONS.includes(record.reason!) &&
           record.retry_count !== 1)
       ) {
         throw new TypeError(
@@ -1096,7 +1096,7 @@ function validateSystemRequiredFields(record: SystemRecord): void {
       requireStrings(record.domain, record.component);
       if (
         record.domain !== "client" ||
-        !["general", "admin", "global"].includes(record.component ?? "") ||
+        !["general", "admin", "global"].includes(record.component!) ||
         record.error_code !== undefined ||
         record.reason !== "react_error_boundary"
       ) {
