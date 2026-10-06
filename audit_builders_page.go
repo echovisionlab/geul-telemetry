@@ -1,7 +1,7 @@
 package telemetry
 
 // NewPageConfigurationAuditRecord records only the Page settings that actually
-// changed: document_layout, show_title, and slug.
+// changed: access_policy, document_layout, show_title, and slug.
 func NewPageConfigurationAuditRecord(m AuditMetadata, id string, fields []string) (AuditRecord, error) {
 	return newCatalogAuditRecord(m, AuditPageUpdated, id, AuditRecord{ChangedFields: canonicalAuditValues(fields)})
 }

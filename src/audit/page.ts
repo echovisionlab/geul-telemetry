@@ -23,9 +23,11 @@ import {
 } from "./content-shared.ts";
 import type { AuditMetadata } from "./types.ts";
 
-type PageConfigurationField = "document_layout" | "show_title" | "slug";
+type PageConfigurationField =
+  "access_policy" | "document_layout" | "show_title" | "slug";
 
 const pageConfigurationFields = new Set<PageConfigurationField>([
+  "access_policy",
   "document_layout",
   "show_title",
   "slug",

@@ -1,6 +1,9 @@
 package telemetry
 
-import "testing"
+import (
+	"reflect"
+	"testing"
+)
 
 func TestPageAuditBuildersAndVariants(t *testing.T) {
 	m := AuditMetadata{AuditID: "00000000-0000-4000-8000-000000000001", OccurredAt: testOccurredAt, RecordActor: RecordActor{Kind: ActorKindMember, MemberID: "member-1"}}
@@ -93,5 +96,23 @@ func TestPageAuditRejectsExtraAttributesAndActors(t *testing.T) {
 	updated.RecordActor = RecordActor{Kind: ActorKindSystem, Service: string(ServiceEditorCollab)}
 	if err := updated.Validate(); err == nil {
 		t.Fatal("system page non-version update accepted")
+	}
+}
+
+func TestPageConfigurationAuditAccessPolicyCanonicalFields(t *testing.T) {
+	m := AuditMetadata{AuditID: "00000000-0000-4000-8000-000000000001", OccurredAt: testOccurredAt, RecordActor: RecordActor{Kind: ActorKindMember, MemberID: "member-1"}}
+	record, err := NewPageConfigurationAuditRecord(m, "page-1", []string{"slug", "access_policy", "access_policy"})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if !reflect.DeepEqual(record.ChangedFields, []string{"access_policy", "slug"}) {
+		t.Fatalf("changed fields not canonical: %v", record.ChangedFields)
+	}
+	if err := record.Validate(); err != nil {
+		t.Fatal(err)
+	}
+	record.ChangedFields = []string{"access_policy", "unknown"}
+	if err := record.Validate(); err == nil {
+		t.Fatal("unknown Page configuration field accepted")
 	}
 }
