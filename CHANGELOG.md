@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/echovisionlab/geul-telemetry/compare/v0.1.4...v0.2.0) (2026-10-06)
+
+
+### Features
+
+* **audit:** record page audience configuration changes ([#15](https://github.com/echovisionlab/geul-telemetry/issues/15)) ([a2c5a11](https://github.com/echovisionlab/geul-telemetry/commit/a2c5a116b6cfe9d82cb0f9aedf92eabbe2235a9c))
+
 ## [0.1.4](https://github.com/echovisionlab/geul-telemetry/compare/v0.1.3...v0.1.4) (2026-10-05)
 
 
