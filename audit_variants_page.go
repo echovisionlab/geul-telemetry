@@ -38,7 +38,7 @@ func validatePageUpdate(r AuditRecord) error {
 			return nil
 		}
 	}
-	return validateChangedOnly("document_layout", "show_title", "slug")(r)
+	return validateChangedOnly("access_policy", "document_layout", "show_title", "slug")(r)
 }
 
 func validatePageVersion(r AuditRecord) error {
